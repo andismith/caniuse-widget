@@ -1,0 +1,74 @@
+@max-page-width: 1200px;
+
+// LESS grid system
+@cols: 12;
+@gutter: 3%;
+ 
+@one_col: (100% - (@gutter * (@cols - 1))) / @cols;
+
+.container() {
+    margin:0 auto;
+    max-width:@max-page-width;
+    //padding:0 20px;
+}
+
+.row() {
+    overflow: hidden;
+    width: auto;
+}
+
+.cols(@num) {
+    float: left;
+    margin-right: @gutter;
+    width: (@one_col * @num) + (@gutter * (@num - 1));
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+ 
+.sub_cols(@num_child, @num_parent) {
+    @parent_size: (@one_col * @num_parent) + (@gutter * (@num_parent - 1));
+    @child_size: (@one_col * @num_child) + (@gutter * (@num_child - 1));
+    float: left;
+    margin-right: (@gutter / @parent_size) * 100%;
+    width: (@child_size / @parent_size) * 100%;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.no-margin() {
+    margin-right: 0;
+}
+
+.box-shadow(@props) {
+    -moz-box-shadow: @props;
+    -webkit-box-shadow: @props;
+    box-shadow: @props;
+}
+
+.box-shadow(@props, @props2) {
+    -moz-box-shadow: @props, @props2;
+    -webkit-box-shadow: @props, @props2;
+    box-shadow: @props, @props2;
+}
+
+.box-shadow(@props, @props2, @props3) {
+    -moz-box-shadow: @props, @props2, @props3;
+    -webkit-box-shadow: @props, @props2, @props3;
+    box-shadow: @props, @props2, @props3;
+}
+
+.no-bullets() {
+    list-style-type: none;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    width: auto;
+
+    &>li {
+        float: left;
+    }
+}

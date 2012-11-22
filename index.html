@@ -1,1 +1,215 @@
-Hello World
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+    
+        <meta charset="utf-8" />
+
+        <title>The "When Can I Use" Web Widget</title>
+
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Andi Smith" />
+
+        <meta name="viewport" content="width=device-width" />
+
+        <script src="//use.edgefonts.net/bree-serif:n4.js"></script>
+        <script src="//use.edgefonts.net/source-sans-pro:n4.js"></script>
+        <script src="//use.edgefonts.net/source-code-pro:n4.js"></script>
+
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/site.css" />
+        <link rel="stylesheet" href="css/narrow.css" media="only screen and (max-width: 560px)" />
+        <link rel="stylesheet" href="css/caniuse.css" />
+
+    </head>
+
+    <body>
+
+        <header class="site-header">
+            <div class="primary">
+                <h1><a href="http://www.andismith.com/" target="_blank">By @andismith</a></h1>
+
+                <ul class="social nav">
+                    <li><a href="http://www.twitter.com/andismith" target="_blank" class="icon-twitter"><span>Twitter</span></a></li>
+                    <li><a href="http://www.linkedin.com/in/andismith" target="_blank" class="icon-linkedin"><span>LinkedIn</span></a></li>
+                    <li><a href="https://plus.google.com/117612515439098068495?rel=author" target="_blank" class="icon-google-plus"><span>Google Plus</span></a></li>
+                    <li><a href="https://github.com/andismith" target="_blank" class="icon-github"><span>Github</span></a></li>
+                    <li><a href="/contact" class="icon-mail"><span>Contact</span></a></li>
+                </ul>
+            </div>
+            <h1 class="secondary">The "When Can I Use" Web Widget</h1>
+
+            <nav class="site-nav primary">
+                <ul class="nav">
+                    <li class="selected"><a href="#intro">Intro</a></li>
+                    <li><a href="#how-to-use">How to Use</a></li>
+                    <li><a href="#examples">Examples</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+
+            <section id="intro" class="intro">
+
+                <header class="title">
+                    <h1 class="header main">Show Up To Date Browser Compatibility Information In Your Articles</h1>
+
+                    <div class="side">
+                        <p class="smallprint">Just 4kb!</p>
+                        <a href="https://github.com/andismith/caniuse-widget/archive/master.zip" class="button primary"><span>Download Now!</span></a>
+                    </div>
+                    
+                </header>
+
+                <div class="content">
+                    <div class="split">
+                        <p>If you've ever written an article about HTML5 web technologies, you'll appreciate how important it can be to inform your readers which browsers the technology works with.</p>
+
+                        <p>The "When Can I Use" Web Widget provides authors with the ability to include up to date information about browser support for a feature they are talking about based on the data crafted by <a href="http://www.caniuse.com/" target="blank">CanIUse.com</a>.</p>
+
+                        <h2>Features</h2>
+
+                        <ul>
+                            <li>
+                                <p>Provides the latest "When Can I Use" information to your readers without manual maintanence.</p>
+                            </li>
+                            <li>
+                                <p>Easy to include in any article (<a href="#how-to-use">here's how</a>).</p>
+                            </li>
+                            <li>
+                                <p>Runs standalone without the need for a JS library.</p>
+                            </li>
+                            <li>
+                                <p>Customise look and feel easily.</p>
+                            </li>
+                            <li>
+                                <p><a href="https://github.com/andismith/caniuse-widget" target="_blank">Fork me on Github!</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="split">
+                        <h2>Example</h2>
+                        <div class="caniuse" data-feature="webgl"></div>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <div class="download">
+                        <a href="https://github.com/andismith/caniuse-widget/archive/master.zip" class="button primary"><span>Download Now!</span></a>
+                    </div>
+                    <div class="social-links">
+                        <p class="social">
+                            <a href="https://twitter.com/intent/tweet?text=When%20Can%20I%20Use%20Web%20Widget&url=" class="icon-twitter" target="_blank"><span>Twitter</span></a>
+                            <a href="http://www.linkedin.com/shareArticle?url=&title=When%20Can%20I%20Use%20Web%20Widget" class="icon-linkedin" target="_blank"><span>Linked In</span></a>
+                            <a href="https://plus.google.com/share?url=" class="icon-google-plus" target="_blank"><span>Google Plus</span></a>
+                            <a href="http://www.facebook.com/sharer.php?u=&t=When%20Can%20I%20Use%20Web%20Widget" class="icon-facebook" target="_blank"><span>Facebook</span></a>
+                            <a href="http://del.icio.us/post?url=" class="icon-delicious" target="_blank"><span>Delicious</span></a>
+                            <a href="https://github.com/andismith/caniuse-widget" class="icon-github" target="_blank"><span>Github</span></a>
+                        </p>
+                    </div>
+            </section>
+
+            <section id="how-to-use">
+
+                <h1 class="header">4 Simple Steps to Use</h1>
+
+                <p>To include the Can I Use Web Widget in your page, you need to complete the following simple steps:</p>
+
+                <ol>
+                    <li>
+                        <p><a href="#">Download the library.</a></p>
+                    </li>
+                    <li>
+                        <p>With the rest of your stylesheets at the top of the  page, include <code>caniuse.css</code>:</p>
+                        <pre><code>&lt;link rel="stylesheet" href="/css/caniuse.css" /&gt;</code></pre>
+                    </li>
+                    <li>
+                        <p>Include the following JavaScript file at the bottom of your page, before the <code>&lt;/body&gt;</code> tag:</p>
+                        <pre><code>&lt;script src="/js/caniuse.js" /&gt;&lt;/script&gt;</code></pre>
+                    </li>
+                    <li>
+                        <p>Where ever you wish to show the Can I Use Web Widget, include the following HTML:</p>
+                        <pre><code>&lt;div class="caniuse" data-feature="<span>feature</span>"&gt;&lt;/div&gt;</code></pre>
+                        <p>You'll need to change the value of <code>data-feature="feature"</code> to the feature you wish to show information on.</p>
+                    </li>
+                </ol>
+
+                <p>You can customise the browsers shown and output from the JavaScript file.</p>
+            </section>
+
+            <section id="examples">
+
+                <h1 class="header">Examples</h1>
+
+                <ul class="demos">
+                    <li class="options">
+                        <ul>
+                            <li><a href="#caniuse-queryselector">querySelector</a></li>
+                            <li><a href="#caniuse-css3-boxsizing">CSS3 Box Sizing</a></li>
+                            <li><a href="#caniuse-transforms2d">2D Transforms</a></li>
+                            <li><a href="#caniuse-transforms3d">3D Transforms</a></li>
+                            <li><a href="#caniuse-flexbox">Flexbox</a></li>
+                            <li><a href="#caniuse-canvas">Canvas</a></li>
+                            <li><a href="#caniuse-webgl">WebGL</a></li>
+                            <li><a href="#caniuse-websockets">WebSockets</a></li>
+                            <li><a href="#caniuse-stream">getUserMedia</a></li>
+                            <li><a href="#caniuse-fontface">Font Face</a></li>
+                            <li><a href="#caniuse-border-image">Border Image</a></li>
+                            <li><a href="#caniuse-css-filters">CSS Filters</a></li>
+                            <li><a href="#caniuse-forms">HTML5 Forms</a></li>
+                            <li><a href="#caniuse-input-datetime">Date/Time Input</a></li>
+                            <li><a href="#caniuse-webworkers">Web Workers</a></li>
+                            <li><a href="#caniuse-dragndrop">Drag and Drop</a></li>
+                            <li><a href="#caniuse-wai-aria">WAI-ARIA Accessibility</a></li>
+
+                            <li><a href="http://caniuse.com/"><strong>And more!</strong></a></li>
+
+                        </ul>
+                    </li>
+                    <li class="example">
+                        <h2 class="title" id="demo-title">querySelector</h2>
+                        <h3>Usage</h3>
+                        <pre><code>&lt;div class="caniuse" data-feature="<span class="feature" id="demo-feature">querySelector</span>"&gt;&lt;/div&gt;</code></pre>
+                        <h3 >Demo</h3>
+                        <div class="caniuse" id="demo-area" data-feature="queryselector"></div>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section id="about">
+
+                <h1 class="header">Thanks To:</h1>
+
+                <ul>
+                    <li>
+                        <p><a href="http://a.deveria.com/" target="_blank">Alexis Deveria</a>, who created and maintains the brilliant <a href="http://www.caniuse.com/" target="_blank">CanIUse.com</a>, where this widget gets its information from.</p>
+                        <p>You can download the <a href="https://github.com/Fyrd/caniuse/blob/master/data.json" target="_blank">raw data</a> on Github.</p>
+                    </li>
+                    <li>
+                        <p><a href="http://icomoon.io/" target="_blank">IcoMoon</a>, where the beautiful browser icons are sourced from.</p>
+                        <p>If you are looking for custom vector icons, check out <a href="http://icomoon.io/" target="_blank">IcoMoon</a>.</p>
+                    </li>
+                    <li>
+                        <p>The Yahoo! Developer Network for creating <a href="http://developer.yahoo.com/yql/" target="_blank">YQL</a>, which allows us to filter the JSON data in to JSON-P without requiring additional server-side code.</p>
+                    <li>
+                        <p>The <a href="http://modernizr.com/" target="_blank">Modernizr</a> team for providing a library to reliably detect features in the user's browser.</p>
+                    </li>
+                </ul>
+
+                <h1 class="header">About Andi Smith</h1>
+
+                <p>Andi Smith is a Presentational Technical Architect based in London who loves diving in to HTML5; CSS3 and JavaScript APIs. He has been building websites for over 13 years for companies such as Barclays, Nike, Heineken, Sainsburys, Coca Cola and Unilever. He hopes you find this widget useful!</p>
+                <p><a href="http://www.twitter.com/andismith" target="_blank">Follow him on Twitter</a></p>
+
+            </section>
+        </div>
+
+        <script src="js/libs/jquery-latest.min.js"></script>
+        <script src="js/caniuse.js"></script>
+        <script src="js/common.js"></script>
+
+    </body>
+</html>

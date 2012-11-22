@@ -1,0 +1,101 @@
+.intro .title .side {
+  text-align: center;
+}
+.info {
+  float: left;
+  margin-right: 3%;
+  width: 48.5%;
+}
+.info:last-child {
+  margin-right: 0;
+}
+.info p {
+  text-align: justify;
+}
+.info .button {
+  margin: 10px auto;
+  text-align: center;
+}
+.download {
+  float: left;
+  margin-right: 3%;
+  width: 48.5%;
+  text-align: center;
+}
+.download:last-child {
+  margin-right: 0;
+}
+.social-links {
+  float: left;
+  margin-right: 3%;
+  width: 48.5%;
+  text-align: center;
+}
+.social-links:last-child {
+  margin-right: 0;
+}
+.social-links p {
+  font-size: 2em;
+  line-height: 1;
+}
+.social-links p a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+.demo {
+  float: left;
+  margin-right: 3%;
+  width: 48.5%;
+}
+.demo:last-child {
+  margin-right: 0;
+}
+.demos {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  list-style-type: none;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  width: auto;
+}
+.demos > li {
+  float: left;
+}
+.demos .options {
+  font-size: 0.9em;
+  padding: 10px 0;
+  width: 20%;
+}
+.demos .options ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  width: auto;
+}
+.demos .options ul > li {
+  float: left;
+}
+.demos .options ul li {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #ccc;
+  float: none;
+  padding: 5px 10px;
+}
+.demos .example {
+  width: 80%;
+}
+.example {
+  padding: 0 20px;
+}
+.example .wrapper {
+  display: none;
+}
+.example .wrapper.selected {
+  display: block;
+  width: 100%;
+}
+.example .wrapper.selected span {
+  font-family: "source-code-pro", "courier-new", "courier";
+}

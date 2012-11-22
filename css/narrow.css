@@ -1,0 +1,64 @@
+html {
+  font-size: 75%;
+  line-height: 1.4;
+}
+.site-header,
+.container {
+  margin: 0;
+}
+.container .main {
+  float: left;
+  margin-right: 3%;
+  width: 100%;
+}
+.container .main:last-child {
+  margin-right: 0;
+}
+.container .side {
+  float: left;
+  margin-right: 3%;
+  width: 100%;
+}
+.container .side:last-child {
+  margin-right: 0;
+}
+.container .split {
+  float: left;
+  margin-right: 3%;
+  width: 100%;
+}
+.container .split:last-child {
+  margin-right: 0;
+}
+.info {
+  float: left;
+  margin-right: 3%;
+  width: 100%;
+}
+.info:last-child {
+  margin-right: 0;
+}
+.download {
+  float: left;
+  margin-right: 3%;
+  width: 100%;
+}
+.download:last-child {
+  margin-right: 0;
+}
+.social-links {
+  float: left;
+  margin-right: 3%;
+  width: 100%;
+}
+.social-links:last-child {
+  margin-right: 0;
+}
+.demo {
+  float: left;
+  margin-right: 3%;
+  width: 100%;
+}
+.demo:last-child {
+  margin-right: 0;
+}

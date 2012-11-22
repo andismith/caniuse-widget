@@ -1,0 +1,89 @@
+@import "helpers";
+
+.intro .title .side {
+    text-align: center;
+}
+
+.info {
+    .cols(6);
+
+    p {
+        text-align: justify;
+    }
+
+    .button {
+        margin: 10px auto;
+        text-align: center
+    }
+}
+
+.download {
+    .cols(6);
+    text-align: center;
+}
+
+.social-links {
+    .cols(6);
+    text-align: center;
+
+    p {
+        font-size: 2em;
+        line-height: 1;
+
+        a {
+            margin-right: 15px;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.demo {
+    .cols(6);
+}
+
+.demos {
+    background: rgba(255,255,255,.5);
+    border-radius: 10px;
+    .no-bullets();
+
+    .options {
+
+        font-size: 0.9em;
+        padding: 10px 0;
+        width: 20%;
+
+        ul {
+            .no-bullets();
+
+            li {
+                border-top: 1px solid #eee;
+                border-bottom: 1px solid #ccc;
+                float: none;
+                padding: 5px 10px;
+            }
+        }
+    }
+
+    .example {
+        width: 80%;
+    }
+}
+
+.example {
+
+    padding: 0 20px;
+
+    .wrapper {
+        display: none;
+
+        &.selected {
+            display: block;
+            width: 100%;
+
+            span {
+                font-family: "source-code-pro", "courier-new", "courier";
+            }
+        }
+    }
+}
