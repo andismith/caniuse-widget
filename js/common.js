@@ -78,8 +78,6 @@ var site = (function() {
         initEvents();
 
         setWidth();
-
-        canIUse.render();
     })();
 
 
