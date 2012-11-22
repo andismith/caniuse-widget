@@ -51,9 +51,9 @@ var site = (function() {
                 demoArea = document.getElementById('demo-area'),
                 demoFeature = document.getElementById('demo-feature');
 
-            e.preventDefault();
+            if (el.href && el.href.indexOf('#') > 0) {
+                e.preventDefault();
 
-            if (el.href.indexOf('#') > 0) {
                 item = el.href.split('#')[1].replace('caniuse-', '');
 
                 demoTitle.innerHTML = el.innerHTML;
